@@ -32,7 +32,7 @@
             <nav>
               <div class="header-flex-links">
                 <ul class="header-flex-links-list">
-                  <li><a class="link" href="#">Agencja</a></li>
+                  <li><a class="link is-active" href="#">Agencja</a></li>
                   <li><a class="link" href="portfolio.html">Portfolio</a></li>
                   <li><a class="link" href="#">Kontakt</a></li>
                 </ul>
@@ -527,6 +527,20 @@
             </ul>
           </div>
         </div>
+        <!-- NEWSLETTER -->
+        
+        <div class="newsletter">
+          <h2 class="newsletter__title">Zapisz się do newslettera</h2>
+          <div class="newsletter__elements">
+            <input type="email" name="email-newsletter" placeholder="E-mail" class="newsletter__input">
+            <button type="submit" class="newsletter__button">Zapisz się
+              <svg width="24" height="24" class="newsletter__svg">
+                <use width="24" height="24" href="./images/icons/icons.svg#icon-telegram"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+        
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -535,22 +549,32 @@
           <button type="button" class="modal-close-btn" data-modal-close>X</button>
           <h2 class="form__title">Zostaw swoje dane w formularzu poniżej</h2>
           <form class="form">
-            <div class="form-element">
-              <label for="user_name">Imię</label>
+            <div class="form__element">
+              <label for="user_name" class="test">
+                <svg width="12" height="12" class="svg" >
+                  <use href="./images/icons/icons.svg#icon-person" ></use>
+                </svg>Imię</label>
               <input type="text" name="name" id="user_name" />
             </div>
     
-            <div class="form-element">
-              <label for="user_telephone">Telefon</label>
+            <div class="form__element">
+              <label for="user_telephone" class="test">
+                <svg width="13" height="13" class="svg" >
+                  <use href="./images/icons/icons.svg#icon-phone" ></use>
+                </svg>
+                Telefon</label>
               <input type="tel" name="tel-number" id="user_telephone" />
             </div>
     
-            <div class="form-element">
-              <label for="user_email">Email</label>
+            <div class="form__element">
+              <label for="user_email" class="test">
+                <svg width="15" height="12" class="svg">
+                  <use href="./images/icons/icons.svg#icon-envelope2" ></use>
+                </svg>Email</label>
               <input type="email" name="email" id="user_email" />
             </div>
     
-            <div class="form-element">
+            <div class="form__element">
               <label for="comments">Komentarz</label>
               <textarea
                 class="form__textarea"
@@ -560,7 +584,7 @@
               ></textarea>
             </div>
     
-            <div class="form-element form-checkbox">
+            <div class="form__element form-checkbox">
               <label for="checkbox" class="checkbox-title"
                 >Oświadczam iż akceptuję <span class="form-regulations">Regulamin</span> i <span class="form-regulations">Politykę Prywatności</span></label
               >
