@@ -692,12 +692,7 @@ padding: 20px 24px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
   }
-  .checkbox-title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-  }
+  
   .form__element {
     display: flex;
     flex-direction: column;
@@ -718,6 +713,9 @@ padding: 20px 24px;
   .form__element:focus-within input {
     border: 1px solid #2196F3;
   }
+  .form__element:focus-within .form__icon {
+    fill: #2196F3;
+  }
   .form__submit {
     padding: 10px 76px;
     width: 200px;
@@ -736,20 +734,50 @@ padding: 20px 24px;
     margin-top: 30px;
     cursor: pointer;
   }
-  .form-checkbox {
-    flex-direction: row-reverse;
-    justify-content:space-evenly;
-  }
+
   .form-regulations {
     color:#2196F3;
     text-decoration: underline;
   }
-  .test {
+  .form__input {
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+  }
+  .form__label {
     position: relative;
-}
-  .svg {
-    position: absolute;
-    top: 18px;
+  }
+  .form__icon {
+    position: absolute; 
+    top: 32px;
+    left: 12px;
+  }
+  .form-checkbox {
+    flex-direction: row-reverse;
+    justify-content:space-evenly;
+    position: relative;
+  }
+  .checkbox-title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+  }
+  .form__icon--agree {
+    padding: 4px 2px 3px 3px;
+  }
+  /* .labelka {
+    display: block;
+    position: relative;
+    cursor: pointer;
+  } */
+  .input {
+   cursor: pointer;
+  }
+  .svg-use {
     
   }
+  
+
+
   
