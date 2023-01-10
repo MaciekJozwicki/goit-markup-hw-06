@@ -565,14 +565,16 @@ padding: 20px 24px;
     padding: 15px 295px 15px 16px;
     display: flex;
     align-items: center;
-    letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
     background-color: var(--color-background);
     margin-top: 20px;
     margin-right: 12px;
+}
+.newsletter__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
 }
 .newsletter__button {
     font-weight: 700;
@@ -590,6 +592,7 @@ padding: 20px 24px;
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    cursor: pointer;
 }
 .newsletter__svg {
     fill: white;
@@ -683,7 +686,7 @@ padding: 20px 24px;
     background-color: var(--color-logo);
     
   }
-  ::placeholder {
+  .form__textarea::placeholder {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -755,7 +758,6 @@ padding: 20px 24px;
   .form-checkbox {
     flex-direction: row-reverse;
     justify-content:space-evenly;
-    position: relative;
   }
   .checkbox-title {
     font-weight: 400;
@@ -766,16 +768,15 @@ padding: 20px 24px;
   .form__icon--agree {
     padding: 4px 2px 3px 3px;
   }
-  /* .labelka {
-    display: block;
+  .labelka {
     position: relative;
     cursor: pointer;
-  } */
+
+  }
   .input {
-   cursor: pointer;
+    
   }
   .svg-use {
-    
   }
   
 
