@@ -774,11 +774,16 @@ padding: 20px 24px;
 
   }
   .input {
-    
+    position: absolute;
+    cursor: pointer;
+    opacity: 0;
   }
   .svg-use {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    
   }
-  
-
-
-  
+  .input:checked {
+    
+  }
