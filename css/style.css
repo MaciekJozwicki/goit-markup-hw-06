@@ -562,7 +562,7 @@ padding: 20px 24px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    padding: 15px 295px 15px 16px;
+    padding: 15px 158px 15px 16px;
     display: flex;
     align-items: center;
     color: rgba(255, 255, 255, 0.6);
@@ -612,16 +612,14 @@ padding: 20px 24px;
     position: absolute;
     top: calc(50% - 290px);
     left: calc(50% - 264px);
-    width: 528px;
+    max-width: 528px;
     height: 581px;
     background-color: var(--color-white);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transform: scale(1);
-    /* opacity: 1;
-    visibility: 1;
-    pointer-events: initial; */
+    padding: 40px;
     transition: transform 500ms ease;
 }
 .modal-close-btn {
@@ -650,8 +648,15 @@ padding: 20px 24px;
 
 /* FORM */
 
+.form {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
 .form__wrapper {
-    width: 528px;
+    /* width: 528px;
     height: 581px;
     padding: 40px;
     position: absolute;
@@ -659,7 +664,7 @@ padding: 20px 24px;
     top: 80px;
     position: absolute;
     left: 0;
-    top: 0;
+    top: 0; */
   }
   .form__title {
     font-weight: 700;
@@ -670,21 +675,11 @@ padding: 20px 24px;
     color: #212121;
     margin-bottom: 30px;
   }
-  .form {
-    max-width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-  }
+  
   .form__textarea {
     height: 120px;
     resize: none;
     padding: 12px 16px;
-  }
-  .form_submit {
-    padding: 10px 76px;
-    background-color: var(--color-logo);
-    
   }
   .form__textarea::placeholder {
     font-family: 'Roboto';
@@ -733,7 +728,7 @@ padding: 20px 24px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 124px;
+    margin-left: 25%;
     margin-top: 30px;
     cursor: pointer;
   }
@@ -768,7 +763,6 @@ padding: 20px 24px;
 
   .labelka {
     position: relative;
-    /* outline: 2px solid red; */
     
   }
   .input {
@@ -777,12 +771,10 @@ padding: 20px 24px;
     width: 16px;
     height: 15px;
     appearance: none;
-    margin-left: 15px;
-    
   }
   .form__icon--agree {
     position: absolute;
-    left: 15px;
+    left: 0;
     bottom: 4px;
     opacity: 0;
     border-radius: 2px;
